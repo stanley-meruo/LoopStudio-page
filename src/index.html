@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Loopstudio Landing</title>
+</head>
+
+<body>
+    <!--HEADER STARTS-->
+    <header class="bg-hero-m-bg bg-center bg-cover bg-no-repeat pt-12 pb-32 sm:px-8 md:px-12 md:bg-hero-d-bg lg:bg-hero-d-bg lg:bg-center lg:bg-cover lg:px-12 xl:px-32 ">
+        
+        <!-- NAVIGATION BAR-->
+        <nav class="flex items-center justify-between px-6">
+            
+            <img src="/images/logo.svg" alt="logo" class="w-44 lg:ml-3">
+                
+            <div onclick="openNav()">
+                <img src="/images/icon-hamburger.svg" alt="" class="lg:hidden">
+            </div>
+            <!-- DESKTOP NAV -->
+            <ul class="hidden lg:flex items-center gap-8 text-white font-josefin-sans ">
+                <li class="font-medium py-2"><a href="#" class=" py-2 border-4 border-y-0 border-x-0 border-white hover:border-b-4">About</a></li>
+                <li class="font-medium py-2"><a href="#" class=" py-2 border-4 border-y-0 border-x-0 border-white hover:border-b-4">Careers</a></li>
+                <li class="font-medium py-2"><a href="#" class=" py-2 border-4 border-y-0 border-x-0 border-white hover:border-b-4">Event</a></li>
+                <li class="font-medium py-2"><a href="#" class=" py-2 border-4 border-y-0 border-x-0 border-white hover:border-b-4">Products</a></li>
+                <li class="font-medium py-2"><a href="#" class=" py-2 border-4 border-y-0 border-x-0 border-white hover:border-b-4">Support</a></li>
+            </ul>
+            <!-- END OF DESKTOP NAV -->
+
+            <!--background overlay element, will close navbar when clicked-->
+            <div onclick="exitNav()" id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 h-full overflow-x-hidden duration-500 z-10">
+
+                <!--navigation menu box-->
+                <div id="sideNav" class="fixed top-0 right-0 bg-slate-950 text-white w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10">
+                    <!--exit icon, will close navbar when clicked-->
+                    <div class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48">
+                        <img src="/images/logo.svg" alt="logo">
+                        <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"></a>
+                    </div>
+                    <!--MOBILE NAV-->
+                    <ul class="text-left text-3xl font-light font-josefin-sans ml-4 sm:text-3xl">
+                        <li class="p-2"><a href="#">ABOUT</a></li>
+                        <li class="p-2"><a href="#">CAREERS</a></li>
+                        <li class="p-2"><a href="#">EVENTS</a></li>
+                        <li class="p-2"><a href="#">PRODUCTS</a></li>
+                        <li class="p-2"><a href="#">SUPPORT</a></li>
+                    </ul>
+                    <!-- END OF MOBILE NAV -->
+                </div>
+            </div>
+        </nav>
+
+        <div class="border-[3px] border-white mx-6 mt-60 mb-40 md:w-3/5 lg:w-4/5 lg:ml-8 xl:w-7/12">
+            <p class="text-white text-4xl font-light font-josefin-sans mx-4 my-6 w-3/4 md:m-10 md:w-4/5 lg:text-6xl xl:text-7xl">IMMERSIVE EXPERIENCES THAT DELIVER </p>
+        </div>
+    </header>
+    <!-- END OF HEADER -->
+    
+    <!-- SECTION I -->
+    <section class="bg-white pt-14 pb-12 px-5 md:px-5 lg:flex lg:relative lg:px-20 xl:px-36 ">
+        <picture>
+            <source media="(min-width:1024px)" srcset="/images/desktop/image-interactive.jpg">
+            <img src="/images/mobile/image-interactive.jpg" alt="" class=" mb-12 md:mx-auto">
+        </picture>
+       <div class="text-center px-5 md:mx-auto lg:absolute lg:left-52 lg:bottom-10 lg:text-left lg:bg-white lg:px-14 lg:py-12 lg:border-1 lg:ml-96 xl:ml-[520px] xl:bottom-1 xl:py-24 xl:px-28">
+           <p class="text-4xl font-josefin-sans font-light mb-4 md:text-5xl md:w-full lg:w-full xl:text-5xl xl:w-4/5">THE LEADER IN INTERACTIVE VR</p>
+           <p class=" text-gray-600 font-alata tracking-wide lg:tracking-wider lg:leading-7 lg:w-full xl:w-11/12">Founded in 2011, Loopstudio has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+       </div>
+    </section>
+    <!-- END OF SECTION I -->
+
+    <!-- SECTION II -->
+    <section class="grid text-white font-josefin-sans py-12 px-7">
+        <p class="text-4xl text-black text-center font-light mb-10 lg:text-left lg:ml-12 lg:hidden xl:ml-28">OUR CREATIONS</p>
+
+        <div class="hidden lg:flex lg:items-center lg:justify-between lg:mb-12 xl:ml-16 xl:mr-20 ">
+            <p class=" text-4xl text-black font-light lg:text-left lg:ml-12 lg:block">OUR CREATIONS</p>
+            <button class="text-black border-2 border-black py-2 px-8 mr-12 lg:block xl:mr-20 hover:bg-black hover:text-white">
+             <a href="" class="text-sm font-semibold font-alata tracking-[0.3rem]">SEE ALL</a>
+            </button>
+        </div>
+        
+        <section class="m-auto lg:grid lg:grid-cols-4 lg:gap-4 lg:mx-12 lg:-mb-2 xl:mb-4 xl:mx-28">
+
+            <div class="relative mb-7 hover:text-black">
+                <picture class="brightness-[.70] hover:opacity-50">
+                    <source media="(min-width:1024px)" srcset="/images/desktop/image-deep-earth.jpg">
+                    <img src="/images/mobile/image-deep-earth.jpg" alt="">
+                </picture>
+                <div class="absolute bottom-6 left-6">
+                    <p class="text-3xl font-light w-1/4 leading-7">DEEP EARTH</p>
+                </div>
+            </div>
+            <div class="relative mb-7 hover:text-black">
+                <picture class="brightness-[.70] hover:opacity-50">
+                    <source media="(min-width:1024px)" srcset="/images/desktop/image-night-arcade.jpg">
+                    <img src="/images/mobile/image-night-arcade.jpg" alt="">
+                </picture>
+                <div class="absolute bottom-6 left-6">
+                    <p class="text-3xl font-light w-1/4 leading-7">NIGHT ARCADE</p>
+                </div>
+            </div>
+            <div class="relative mb-7 hover:text-black">
+                <picture class="brightness-[.70] hover:opacity-50">
+                    <source media="(min-width:1024px)" srcset="/images/desktop/image-soccer-team.jpg">
+                    <img src="/images/mobile/image-soccer-team.jpg" alt="">
+                </picture>
+                <div class="absolute bottom-6 left-6">
+                    <p class="text-3xl font-light w-3/5 leading-7 lg:w-48">SOCCER TEAM VR</p>
+                </div>
+            </div>
+            <div class="relative mb-7 hover:text-black">
+                <picture class="brightness-[.70] hover:opacity-50">
+                    <source media="(min-width:1024px)" srcset="/images/desktop/image-grid.jpg">
+                    <img src="/images/mobile/image-grid.jpg" alt="">
+                </picture>
+                <div class="absolute bottom-6 left-6">
+                    <p class="text-3xl font-light w-1/4 leading-7">THE GRID</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="m-auto lg:grid lg:grid-cols-4 lg:gap-4 lg:mx-12 lg:-mb-2 xl:mx-28">
+            <div class="relative mb-7 hover:text-black">
+                <picture class="brightness-[.70] hover:opacity-50">
+                    <source media="(min-width:1024px)" srcset="/images/desktop/image-from-above.jpg">
+                    <img src="/images/mobile/image-from-above.jpg" alt="">
+                </picture>
+                <div class="absolute bottom-6 left-6">
+                    <p class="text-3xl font-light w-3/5 leading-7 lg:w-60">FROM UP ABOVE VR</p>
+                </div>
+            </div>
+             <div class="relative mb-7 hover:text-black">
+                <picture class="brightness-[.70] hover:opacity-50">
+                    <source media="(min-width:1024px)" srcset="/images/desktop/image-pocket-borealis.jpg">
+                    <img src="/images/mobile/image-pocket-borealis.jpg" alt="">
+                </picture>
+                <div class="absolute bottom-6 left-6">
+                    <p class="text-3xl font-light w-1/4 leading-7">POCKET BOREALIS</p> 
+                </div>
+            </div>
+            <div class="relative mb-7 hover:text-black">
+                <picture class="brightness-[.70] hover:opacity-50">
+                    <source media="(min-width:1024px)" srcset="/images/desktop/image-curiosity.jpg">
+                    <img src="/images/mobile/image-curiosity.jpg" alt="">
+                </picture>
+                <div class="absolute bottom-6 left-6">
+                    <p class="text-3xl font-light w-1/4 leading-7">THE CURIOSITY</p>
+                </div>
+            </div>
+            <div class="relative mb-7 hover:text-black">
+                <picture class="brightness-[.70] hover:opacity-50">
+                    <source media="(min-width:1024px)" srcset="/images/desktop/image-fisheye.jpg">
+                    <img src="/images/mobile/image-fisheye.jpg" alt="">
+                </picture>
+                <div class="absolute bottom-6 left-6">
+                    <p class="text-3xl font-light w-3/5 leading-7 lg:w-48">MAKE IT FISHEYE</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <button class="text-black border-2 border-black py-2 px-10 mx-auto my-4 hover:bg-black hover:text-white lg:hidden">
+            <a href="" class="text-sm font-semibold font-alata tracking-[0.3rem]">SEE ALL</a>
+        </button>
+
+    </section>
+    <!-- END OF SECTION II -->
+
+    <!-- FOOTER -->
+    <footer class="text-center bg-black py-16 lg:flex lg:justify-between lg:px-16 lg:py-4">
+        <div class="xl:ml-14">
+            <img src="/images/logo.svg" alt="" class="w-44 mx-auto lg:ml-5 lg:mt-10">
+    
+            <ul class="text-white font-medium font-alata my-8 lg:flex lg:my-3">
+                <li class="m-4"><a href="#" class="py-3 border-4 border-y-0 border-x-0 border-white hover:border-b-4">About</a></li>
+                <li class="m-4"><a href="#" class="py-3 border-4 border-y-0 border-x-0 border-white hover:border-b-4">Careers</a></li>
+                <li class="m-4"><a href="#" class="py-3 border-4 border-y-0 border-x-0 border-white hover:border-b-4">Events</a></li>
+                <li class="m-4"><a href="#" class="py-3 border-4 border-y-0 border-x-0 border-white hover:border-b-4">Products</a></li>
+                <li class="m-4"><a href="#" class="py-3 border-4 border-y-0 border-x-0 border-white hover:border-b-4">Support</a></li>
+            </ul>
+        </div>
+
+        <div class="lg:mr-3 xl:mr-28">
+            <div class="flex items-center justify-center gap-6 mt-12 mb-4 lg:flex lg:justify-end lg:gap-4 lg:mt-10">
+                <a href="#" class=" py-2 border-y-0 border-x-0 hover:border-b-2"><img src="/images/icon-facebook.svg" alt="Facebook logo"></a>
+                <a href="#" class=" py-2 border-y-0 border-x-0 hover:border-b-2"><img src="/images/icon-twitter.svg" alt="Twitter logo"></a>
+                <a href="#" class=" py-2 border-y-0 border-x-0 hover:border-b-2"><img src="/images/icon-pinterest.svg" alt="Pinterest logo"></a>
+                <a href="#" class=" py-2 border-y-0 border-x-0 hover:border-b-2"><img src="/images/icon-instagram.svg" alt="Instagram logo" ></a>
+            </div>
+            
+            <p class="text-gray-500 text-xs font-alata lg:mt-5 lg:text-sm">&copy 2024 Stanley Meruo. All rights reserved</p>
+        </div>
+
+    </footer>
+    <!-- END OF FOOTER -->
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
