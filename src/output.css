@@ -740,6 +740,10 @@ video {
   gap: 2rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
