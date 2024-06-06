@@ -27,4 +27,4 @@
 
 - Behance - [Stanley Seruo](https://www.behance.net/stanleymeruo/projects)
 - LinkedIn - [stanley-meruo](https://www.linkedin.com/in/stanley-meruo-062122146)
-- Twitter - [@smartlify01](https://www.twitter.com/stanley-meruo)
+- Twitter - [@stanley-meruo](https://www.twitter.com/stanley-meruo)
